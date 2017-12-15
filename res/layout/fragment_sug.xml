@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    
+    
+    <LinearLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">	
+        
+        <!--导航栏-->
+    	<RelativeLayout style="@style/navigation_bar">
+
+        	<Button
+            	android:id="@+id/menu_btn"
+            	style="@style/btn"
+            	android:background="@drawable/menu_btn"/>
+        	
+			<LinearLayout style="@style/linearlayout_title" >
+			    
+        		<TextView
+        	    	style="@style/title_text"
+        	    	android:id="@+id/app_name"
+        	    	android:text="@string/app_name" />
+
+        		<TextView
+        	    	style="@style/context"
+        	    	android:id="@+id/app_title"
+        	    	android:text="@string/sug_title"/>
+        	
+        	</LinearLayout>
+
+    	</RelativeLayout>
+    	
+    	<LinearLayout style="@style/background2"
+    	    android:gravity="center_vertical|center_horizontal">
+			
+    	    <LinearLayout
+    	        style="@style/icon"
+    	        android:layout_marginTop="30dp"
+    	        android:background="@drawable/answer_frame_img"
+    	        android:orientation="vertical">
+        		
+    	        <LinearLayout 
+    	        android:layout_width="match_parent"
+    	        android:layout_height="match_parent"
+    	        android:orientation="vertical"
+    	        android:background="@drawable/white_color">
+
+    			<LinearLayout 
+    	    		style="@style/linearlayout_content"
+    	    		android:orientation="vertical"
+    	    		android:gravity="left">
+    	    
+    	    		<TextView 
+    	        		style="@style/strings" 
+    	        		android:gravity="left"
+    	        		android:textColor="@color/bblack"
+    	        		android:text="@string/name"/>
+    	    
+    	    		<EditText 
+    	        		android:id="@+id/name"
+    	        		style="@style/image"
+    	        		android:gravity="left"
+    	        		android:lines="1"
+    	        		android:layout_weight="1"
+    	       	 		android:paddingLeft="10dp"
+    	        		android:paddingTop="3dp"
+    	        		android:layout_marginLeft="60dp"
+    	        		android:layout_marginRight="50dp"
+    	        		android:layout_marginTop="9dp"
+    	        		android:background="@drawable/edit_name_bg"/>
+    	    
+    			</LinearLayout>
+    	
+    			<LinearLayout 
+    	    		style="@style/linearlayout_content"
+    	    		android:orientation="vertical"
+    	    		android:gravity="left|top"
+    	    		android:layout_gravity="center_horizontal">
+    	    
+    	    		<TextView 
+    	        		style="@style/strings" 
+    	        		android:layout_gravity="left"
+    	        		android:textColor="@color/bblack"
+    	        		android:text="@string/your_sug"/>
+    	    
+    	    		<EditText
+    	        		android:id="@+id/suggestions"
+    	        		style="@style/image"
+    	        		android:minLines="6"
+    	        		android:layout_weight="1"
+    	        		android:gravity="left|top"
+    	        		android:paddingLeft="10dp"
+    	        		android:paddingRight="10dp"
+    	        		android:paddingTop="9dp"
+    	        		android:layout_height="184dp"
+    	        		android:layout_marginLeft="30dp"
+    	        		android:layout_marginRight="20dp"
+    	        		android:inputType="textMultiLine"
+    	        		android:layout_gravity="center_horizontal"
+    	        		android:background="@drawable/edit_frame_bg" />
+    	    
+    			</LinearLayout>
+    		
+    			<Button 
+    	    		android:id="@+id/send_btn"
+    	    		style="@style/buttons"
+    	    		android:layout_gravity="center_horizontal"
+    	    		android:layout_marginTop="20dp"
+    	    		android:layout_marginBottom="20dp"
+    	    		android:paddingTop="5dp"
+    	    		android:paddingBottom="5dp"
+    	    		android:paddingLeft="11dp"
+    	    		android:paddingRight="11dp"
+    	    		android:text="@string/send"
+    	    		android:textSize="24sp"
+    	    		android:background="@drawable/btn_bg_img"/>
+    		
+    			</LinearLayout>
+    		
+    	    </LinearLayout>
+    	    
+    	</LinearLayout>
+    	
+	</LinearLayout>
+
+</RelativeLayout>

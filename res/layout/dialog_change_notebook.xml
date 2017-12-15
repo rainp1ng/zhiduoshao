@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white" >
+
+    <LinearLayout style="@style/dialog"
+        android:paddingBottom="10dp">
+        
+    	<RelativeLayout
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content" 
+        	android:layout_marginTop="22dp"
+        	android:layout_marginBottom="10dp">
+
+        	<TextView
+            	android:id="@+id/textView2"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="@string/change_pic"
+            	android:layout_marginTop="12dp"
+            	android:layout_marginBottom="10dp"
+            	android:layout_alignLeft="@+id/textView3"
+            	android:layout_below="@+id/textView3"
+            	android:textColor="@color/black"
+            	android:textSize="17sp" />
+			
+        	<TextView
+            	android:id="@+id/textView4"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="@string/choose_as_default"
+            	android:layout_marginTop="12dp"
+            	android:layout_alignLeft="@+id/textView3"
+            	android:layout_below="@+id/textView2"
+            	android:textColor="@color/black"
+            	android:textSize="17sp" />
+        	
+        	<Button
+        	    style="@style/realbutton"
+            	android:id="@+id/default_btn"
+            	android:layout_marginRight="13dp"
+            	android:layout_marginLeft="13dp"
+            	android:layout_alignRight="@+id/notebook_name"
+            	android:layout_alignBottom="@+id/textView4"
+            	android:layout_below="@+id/change_btn"
+            	android:layout_toRightOf="@+id/textView4"
+            	android:text="@string/set"
+            	android:textSize="19sp"/>
+        	
+        	<Button
+        	    style="@style/realbutton"
+            	android:id="@+id/change_btn"
+            	android:layout_marginLeft="42dp"
+            	android:layout_marginRight="42dp"
+            	android:layout_alignRight="@+id/notebook_name"
+            	android:layout_marginBottom="10dp"
+            	android:layout_below="@+id/notebook_name"
+            	android:layout_toRightOf="@+id/textView2"
+            	android:text="@string/change_notebook"
+            	android:textSize="19sp"/>
+
+        	<EditText
+        	    android:id="@+id/notebook_name"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:layout_alignParentRight="true"
+        	    android:layout_toRightOf="@+id/textView2"
+        	    android:background="@drawable/edit_text_bg"
+        	    android:layout_marginBottom="8dp"
+        	    android:paddingLeft="8dp"
+        	    android:textColor="@color/black"
+        	    android:singleLine="true"
+        	    android:textSize="17sp" />
+
+        	<TextView
+        	    android:id="@+id/textView3"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:layout_above="@+id/change_btn"
+        	    android:layout_marginBottom="10dp"
+        	    android:layout_marginLeft="20dp"
+        	    android:text="@string/notebook_name"
+        	    android:textColor="@color/black"
+        	    android:textSize="17sp" />
+        
+    	</RelativeLayout>
+    
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/dialog"
+        android:orientation="horizontal"
+        android:paddingTop="6dp"
+        android:paddingBottom="10dp">
+
+        <Button
+            style="@style/realbutton"
+            android:id="@+id/cancel_btn"
+            android:text="@string/cancel"/>
+
+        <Button
+            style="@style/realbutton"
+            android:id="@+id/to_change_btn"
+            android:text="@string/change_notebook"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/dialog"
+        android:orientation="horizontal"
+        android:paddingTop="6dp"
+        android:paddingBottom="10dp">
+
+        <Button
+            style="@style/realbutton"
+            android:background="@drawable/record_btn_bg"
+            android:id="@+id/delete_btn"
+            android:text="@string/delete"/>
+        
+   	</LinearLayout>
+    
+</LinearLayout>

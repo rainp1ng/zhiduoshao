@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    
+    
+    <LinearLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        
+        <!--导航栏-->
+    	<RelativeLayout style="@style/navigation_bar">
+	
+        	<Button
+            	android:id="@+id/menu_btn"
+            	style="@style/btn"
+            	android:background="@drawable/menu_btn"/>
+
+        	<LinearLayout style="@style/linearlayout_title" >
+        	
+        		<TextView
+        	   	 	style="@style/title_text"
+        	    	android:id="@+id/app_name"
+        	    	android:text="@string/app_name" />
+
+        		<TextView
+        	    	style="@style/context"
+        	    	android:id="@+id/app_title"
+        	    	android:text="@string/stat_title"/>
+			
+        	</LinearLayout>
+        	
+    	</RelativeLayout>
+    	
+    	<LinearLayout style="@style/background"
+    	    android:gravity="center_vertical"
+    	    android:background="@drawable/stat_bg">
+    		
+    	    <ScrollView 
+    	        android:layout_width="match_parent"
+    	        android:layout_height="match_parent">
+    	    
+    		<LinearLayout style="@style/linearlayout_content"
+    		    android:gravity="center_horizontal"
+    		    android:paddingTop="45dp"
+    	    	android:orientation="vertical">
+    	    	
+    		    <RelativeLayout 
+					android:layout_height="match_parent"
+    		        android:layout_width="match_parent"
+    		        android:layout_gravity="center"
+    		        android:background="@drawable/answer_frame_img"
+    		        android:gravity="center">
+    		        
+    		        <TextView style="@style/text"
+    		            android:id="@+id/today_stat"
+    		            android:layout_marginTop="20dp"
+    	            	android:text="@string/today_stat"
+    	            	android:textColor="@color/bblack"
+    	            	android:textSize="19sp"/>
+    		        
+    		        <TextView style="@style/text"
+    		            android:id="@+id/best_stat"
+						android:layout_below="@+id/today_stat"
+						android:layout_alignLeft="@+id/today_stat"
+						android:layout_marginTop="20dp"
+    	            	android:text="@string/best_stat"
+    	            	android:textColor="@color/bblack"
+    	            	android:textSize="19sp"/>
+    		        
+    		        <TextView style="@style/text"
+    		            android:id="@+id/total_answer"
+						android:layout_below="@+id/best_stat"
+						android:layout_alignLeft="@+id/best_stat"
+						android:layout_marginTop="20dp"
+    	            	android:text="@string/total_answer"
+    	            	android:textColor="@color/bblack"
+    	            	android:textSize="19sp"/>
+    		        
+    		        <TextView style="@style/text"
+    		            android:id="@+id/total_right"
+						android:layout_below="@+id/total_answer"
+						android:layout_alignLeft="@+id/total_answer"
+						android:layout_marginTop="20dp"
+    	            	android:text="@string/total_right"
+    	            	android:textColor="@color/bblack"
+    	            	android:textSize="19sp"/>
+
+    		        <TextView style="@style/text"
+    		            android:id="@+id/total_wrong"
+						android:layout_below="@+id/total_right"
+						android:layout_alignLeft="@+id/total_right"
+						android:layout_marginTop="20dp"
+    	            	android:text="@string/total_wrong"
+    	            	android:textColor="@color/bblack"
+    	            	android:textSize="19sp"/>
+    		        
+    		        <TextView style="@style/text"
+    		            android:id="@+id/today_stat_"
+    		            android:layout_marginLeft="21dp"
+    		            android:layout_alignBottom="@+id/today_stat"
+    		            android:layout_toRightOf="@+id/today_stat"
+    	            	android:text="20题"
+    	            	android:textColor="@color/bblack"
+    	            	android:textSize="22sp"/>
+    		        		 
+    		        <TextView style="@style/text"
+    		            android:id="@+id/best_stat_"
+    		            android:layout_marginLeft="21dp"
+    		            android:layout_alignBottom="@+id/best_stat"
+    		            android:layout_toRightOf="@+id/best_stat"
+    	            	android:text="22题"
+    	            	android:textColor="@color/bblack"
+    	            	android:textSize="22sp"/>
+    		        
+    		        <TextView style="@style/text"
+    		            android:id="@+id/total_answer_"
+    		            android:layout_marginLeft="21dp"
+    		            android:layout_alignBottom="@+id/total_answer"
+    		            android:layout_toRightOf="@+id/total_answer"
+    	            	android:text="24题"
+    	            	android:textColor="@color/bblack"
+    	            	android:textSize="22sp"/>
+    		        
+    		        <TextView style="@style/text"
+    		            android:id="@+id/total_right_"
+    		            android:layout_marginLeft="21dp"
+    		            android:layout_alignBottom="@+id/total_right"
+    		            android:layout_toRightOf="@+id/total_right"
+    	            	android:text="26题"
+    	            	android:textColor="@color/bblack"
+    	            	android:textSize="22sp"/>
+    		        
+    		        <TextView style="@style/text"
+    		            android:id="@+id/total_wrong_"
+    		            android:layout_marginLeft="21dp"
+    		            android:layout_alignBottom="@+id/total_wrong"
+    		            android:layout_toRightOf="@+id/total_wrong"
+    	            	android:text="28题"
+    	            	android:textColor="@color/bblack"
+    	            	android:textSize="22sp"/>
+    		        	
+    		    </RelativeLayout>
+    		    
+    		    <LinearLayout style="@style/linearlayout_content"
+    		    	android:gravity="center_horizontal"
+    	    		android:orientation="vertical">
+    		    
+    	    		<Button style="@style/realbutton"
+    	    	    	android:id="@+id/wrong_set"
+    	    	    	android:layout_marginTop="24dp"
+    	    	    	android:paddingLeft="13dp"
+    	    	    	android:paddingRight="13dp"
+    	    	   	 	android:text="@string/wrong_set"/>
+    	    		
+    	    		<Button style="@style/realbutton"
+    	    	    	android:id="@+id/delete_wrong_set"
+    	    	    	android:layout_marginTop="12dp"
+    	    	    	android:paddingLeft="13dp"
+    	    	    	android:paddingRight="13dp"
+    	    	   	 	android:text="@string/delete_wrong_set"/>
+    	    		
+    	    		<Button style="@style/realbutton"
+    	    	    	android:id="@+id/delete_stat"
+    	    	    	android:layout_marginTop="12dp"
+    	    	    	android:layout_marginBottom="23dp"
+    	    	    	android:paddingLeft="13dp"
+    	    	    	android:paddingRight="13dp"
+    	    	   	 	android:text="@string/delete_stat"/>
+    	    	
+    	    	</LinearLayout>
+    	    	
+    		</LinearLayout>
+    		
+    		</ScrollView>
+    		
+    	</LinearLayout>
+    	
+	</LinearLayout>
+	 
+</RelativeLayout>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/menu_bg">
+	
+    <LinearLayout 
+        android:layout_height="match_parent"
+        android:layout_width="200dp"
+        android:orientation="vertical"
+        android:background="@drawable/white_color">
+        
+    	<!--标题-->
+    	<LinearLayout 
+        	android:layout_height="wrap_content"
+        	android:layout_width="match_parent"
+        	android:orientation="vertical"
+        	
+        	android:layout_marginBottom="3dp">
+
+        	<TextView
+            	android:id="@+id/name_menu"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_gravity="center_horizontal"
+            	android:layout_marginTop="16dp"
+            	android:text="@string/menu_name"
+            	android:textColor="@color/bblack"
+            	android:textSize="17sp" />
+    	
+    		</LinearLayout>
+			
+    		<TextView style="@style/line"
+    	       	android:paddingTop="3dp"
+    	        android:background="@color/gray"/>
+    		    
+    		<ScrollView	
+        		android:layout_width="match_parent"
+	    		android:layout_height="match_parent">
+        		
+        		<LinearLayout 
+    				style="@style/linearlayout_menu_btn">
+            
+        		<TextView style="@style/gap"/>
+        		
+        		<TextView style="@style/line_menu"/>
+        		
+            	<!--学习的选项按钮-->
+    			<LinearLayout
+    	    		android:id="@+id/menu_btn_study"
+    	    		android:background="@drawable/menu_bg_day"
+    	    		style="@style/linearlayout_menu_btn">
+    				
+    		
+					<LinearLayout 
+	    				style="@style/linearlayout_content">
+					    	
+					    <ImageView 
+					        style="@style/icon"
+					        android:src="@drawable/study_btn"/>
+					    
+	    				<TextView 
+	        				style="@style/menu_text"
+	        				android:text="@string/study"/>
+
+					</LinearLayout>		    			
+	    	
+				</LinearLayout>
+				
+    			<TextView style="@style/line_menu"/>
+    			
+    			<!--笔记的选项按钮-->
+    			<LinearLayout
+    	    		android:id="@+id/menu_btn_note"
+    	    		android:background="@drawable/menu_bg_day"
+    	    		style="@style/linearlayout_menu_btn">
+    				
+    		
+					<LinearLayout 
+	    				style="@style/linearlayout_content">
+						
+					    <ImageView 
+					        style="@style/icon"
+					        android:src="@drawable/note_btn"/>
+					    
+	    				<TextView 
+	        				style="@style/menu_text"
+	        				android:text="@string/note"/>
+
+					</LinearLayout>	
+		
+	    			
+	    	
+				</LinearLayout>	
+    			
+    			<TextView style="@style/line_menu"/>
+    			
+    			<!--记录的选项按钮-->
+    			<LinearLayout
+    	    		android:id="@+id/menu_btn_record"
+    	    		android:background="@drawable/menu_bg_day"
+    	    		style="@style/linearlayout_menu_btn">
+    				
+    		
+					<LinearLayout 
+	    				style="@style/linearlayout_content">
+						
+					    <ImageView 
+					        style="@style/icon"
+					        android:src="@drawable/record_btn"/>
+					    
+	    				<TextView 
+	        				style="@style/menu_text"
+	        				android:text="@string/record"/>
+	
+					</LinearLayout>	
+		
+	    			
+	    	
+				</LinearLayout>
+    			
+    			<TextView style="@style/line_menu"/>
+    			
+    			<!--搜索的选项按钮-->
+    			<LinearLayout
+    	    		android:id="@+id/menu_btn_search"
+    	    		android:background="@drawable/menu_bg_day"
+    	    		style="@style/linearlayout_menu_btn">
+    				
+    				
+    	
+					<LinearLayout 
+	    				style="@style/linearlayout_content">
+						
+					    <ImageView 
+					        style="@style/icon"
+					        android:src="@drawable/search_btn"/>
+					    
+	    				<TextView 
+	        				style="@style/menu_text"
+	        				android:text="@string/search"/>
+
+					</LinearLayout>	
+		
+	    	
+				</LinearLayout>
+				
+    			<TextView style="@style/line_menu"/>
+    			
+    			<!--建议的选项按钮-->
+    			<LinearLayout
+    	    		android:id="@+id/menu_btn_suggestion"
+    	    		android:background="@drawable/menu_bg_day"
+    	    		style="@style/linearlayout_menu_btn">
+    				
+    		
+					<LinearLayout 
+	    				style="@style/linearlayout_content">
+
+					    <ImageView 
+					        style="@style/icon"
+					        android:src="@drawable/sug_btn"/>
+
+	    				<TextView 
+	        				style="@style/menu_text"
+	        				android:text="@string/suggestions"/>
+
+					</LinearLayout>	
+		
+	    			
+	    	
+				</LinearLayout>
+		
+    			<TextView style="@style/line_menu"/>
+    			
+    			<!--帮助的选项按钮-->
+    			<LinearLayout
+    	    		android:id="@+id/menu_btn_help"
+    	    		android:background="@drawable/menu_bg_day"
+    	    		style="@style/linearlayout_menu_btn">
+    				
+    		
+					<LinearLayout 
+	    				style="@style/linearlayout_content">
+						
+					    <ImageView 
+					        style="@style/icon"
+					        android:src="@drawable/help_btn"/>
+					    
+	    				<TextView 
+	        				style="@style/menu_text"
+	        				android:text="@string/help"/>
+
+					</LinearLayout>	
+		
+	    			
+	    	
+				</LinearLayout>
+    			
+    			<TextView style="@style/line_menu"/>
+    			
+    			<!--统计的选项按钮-->
+    			<LinearLayout
+    	    		android:id="@+id/menu_btn_model"
+    	    		android:background="@drawable/menu_bg_day"
+    	    		style="@style/linearlayout_menu_btn">
+    				
+    		
+					<LinearLayout 
+	    				style="@style/linearlayout_content">
+						
+					    <ImageView 
+					        style="@style/icon"
+					        android:src="@drawable/stat_btn"/>
+					    
+	    				<TextView 
+	        				style="@style/menu_text"
+	        				android:text="@string/model"/>
+
+					</LinearLayout>	
+		
+	    			
+	    	
+				</LinearLayout>
+    			
+    			<TextView style="@style/line_menu"/>
+    			
+    			<!--关于的选项按钮-->
+    			<LinearLayout
+    	    		android:id="@+id/menu_btn_about"
+    	    		android:background="@drawable/menu_bg_day"
+    	    		style="@style/linearlayout_menu_btn">
+    		
+					<LinearLayout 
+	    				style="@style/linearlayout_content">
+							
+					    <ImageView 
+					        style="@style/icon"
+					        android:src="@drawable/about_btn"/>
+					    
+	    				<TextView 
+	        				style="@style/menu_text"
+	        				android:text="@string/about"/>
+
+					</LinearLayout>	
+	    	
+				</LinearLayout>
+				
+    			<TextView style="@style/line_menu"/>
+    			
+    			<!--退出的选项按钮-->
+    			<LinearLayout
+    	    		android:id="@+id/menu_btn_exit"
+    	    		android:background="@drawable/menu_bg_day"
+    	    		style="@style/linearlayout_menu_btn">
+    				
+    		
+					<LinearLayout 
+	    				style="@style/linearlayout_content">
+						
+					    <ImageView 
+					        style="@style/icon"
+					        android:src="@drawable/exit_btn"/>
+					    
+	    				<TextView 
+	        				style="@style/menu_text"
+	        				android:text="@string/exit"/>
+
+					</LinearLayout>	
+		
+	    			
+	    	
+				</LinearLayout>
+				
+				<TextView style="@style/line_menu"/>
+				
+        	</LinearLayout>
+    	        
+    	</ScrollView>
+    		
+	</LinearLayout>	
+	
+</RelativeLayout>

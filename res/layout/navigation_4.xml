@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="bottom|center_horizontal"
+    android:background="@drawable/navigation_4">
+
+    
+    <LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingTop="20dp"
+        android:orientation="vertical">
+    
+    	<CheckBox style="@style/strings"
+        	android:id="@+id/need_help"
+        	android:textSize="14sp"
+        	android:layout_gravity="center_horizontal"
+        	android:gravity="center_horizontal|center_vertical"
+        	android:textColor="@color/white"
+        	android:text="不再显示该提示"/>
+    
+    	<Button style="@style/realbutton"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+        	android:id="@+id/enter_btn"
+        	android:paddingRight="14dp"
+    	    android:paddingLeft="14dp"
+    	    android:paddingTop="2dp"
+    	    android:paddingBottom="3dp"
+    	    android:textSize="26sp"
+    	    android:textColor="@color/white"
+        	android:layout_gravity="center_horizontal"
+        	android:text="进入应用"/>
+   
+    </LinearLayout>
+    
+</LinearLayout>

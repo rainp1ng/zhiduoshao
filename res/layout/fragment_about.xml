@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    
+    
+    <LinearLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        
+        <!--导航栏-->
+    	<RelativeLayout style="@style/navigation_bar">
+
+        	<Button
+            	android:id="@+id/menu_btn"
+            	style="@style/btn"
+            	android:background="@drawable/menu_btn"/>
+        	
+        	<LinearLayout style="@style/linearlayout_title" >
+
+        		<TextView
+        	    	style="@style/title_text"
+        	    	android:id="@+id/app_name"
+        	    	android:text="@string/app_name" />
+
+        		<TextView
+        	    	style="@style/context"
+        	    	android:id="@+id/app_title"
+        	    	android:text="@string/about_title"/>
+        	
+        	</LinearLayout>
+
+    	</RelativeLayout>
+    		
+    	<LinearLayout style="@style/background2">
+    	    
+    	        <ScrollView android:layout_width="match_parent"
+    	            android:layout_height="wrap_content">
+    	            
+    	            <LinearLayout style="@style/frame"
+    	    			android:paddingTop="11dp">
+    	            
+    	            	<LinearLayout style="@style/linearlayout_content"
+    	                	android:orientation="vertical"
+    	                	android:paddingTop="7dp"
+    	                	android:paddingLeft="0dp"
+    	               		android:paddingRight="0dp"
+    	               		android:gravity="center_vertical"
+    	               		android:layout_gravity="center_vertical"
+    	                	android:layout_marginTop="14dp"
+    	                	android:layout_marginLeft="15dp"
+    	                	android:layout_marginRight="15dp"
+    	                	android:layout_marginBottom="15dp"
+    	                	android:background="@drawable/answer_frame_img">
+    	            
+    	            		<LinearLayout style="@style/linearlayout_content"
+    	                		android:orientation="horizontal">
+    	                
+    	            			<ImageView 
+    	                			style="@style/icon"
+									android:src="@drawable/ic_launcher"
+    	                			android:layout_gravity="left"/>
+    	            	
+    	            			<LinearLayout 
+    	            	    		style="@style/icon"
+    	            	    		android:layout_marginLeft="15dp"
+    	            	    		android:orientation="vertical">
+    	            	    
+    	            	    		<TextView style="@style/strings"
+    	            	        		android:text="@string/app_name"
+    	            	        		android:textSize="19sp"/>
+    	            	        
+    	            	    		<TextView style="@style/strings"
+    	            	   				android:text="@string/version"
+    	            	        		android:textSize="12sp"/>
+    	            	    
+    	            	    		<TextView style="@style/strings"
+    	            	   				android:text="@string/for_device"
+    	            	        		android:textSize="12sp"/>
+    	            	    
+    	            			</LinearLayout>
+    	            	
+    	            		</LinearLayout>
+    	            
+    	           	 		<TextView style="@style/line"
+    	                		android:layout_height="1dp"/>
+    	            	
+    	           	 		<LinearLayout style="@style/linearlayout_content"
+    	           	 	    	android:orientation="vertical"
+    	           	 	    	android:gravity="left">
+    	           	 	    
+    	           	 	    	<TextView style="@style/strings"
+    	           	 	        	android:text="@string/team_right"
+    	           	 	        	android:textSize="13sp"/>
+    	           	 	    
+    	           	 	    	<TextView style="@style/strings"
+    	           	 	        	android:text="@string/team_right_e"
+    	           	 	        	android:textSize="12sp"/>
+    	           	 	    
+    	           	 		</LinearLayout>
+    	           	 	
+    	           	 		<LinearLayout style="@style/linearlayout_content"
+    	           	 	    	android:orientation="vertical"
+    	           	 	    	android:gravity="left">
+    	           	 	    
+    	           	 	    	<TextView style="@style/strings"
+    	           	 	        	android:text="@string/state"
+    	           	 	        	android:textSize="17sp"/>
+    	           	 	    
+    	           	 	    	<TextView style="@style/strings"
+    	           	 	        	android:text="@string/my_state"
+    	           	 	        	android:textSize="13sp"/>
+    	           	 	    
+    	           	 	    	<TextView style="@style/strings"
+    	           	 	        	android:text="@string/tips"
+    	           	 	        	android:layout_marginTop="28dp"
+    	           	 	        	android:textSize="13sp"/>
+    	           	 	    
+    	           	 	    	<TextView style="@style/strings"
+    	           	 	        	android:text="@string/team"
+    	           	 	        	android:layout_marginTop="28dp"
+    	           	 	        	android:textSize="13sp"/>
+    	           	 	    
+    	           	 		</LinearLayout>
+    	            
+    	            	</LinearLayout>
+    	            
+    	            	<TextView style="@style/icon"
+    	            	    android:text=""
+    	            	    android:layout_height="25dp"/>
+    	            
+    	            </LinearLayout>
+    	            
+    	        </ScrollView>
+
+    	</LinearLayout>
+    	
+    	
+	</LinearLayout>
+	 
+</RelativeLayout>

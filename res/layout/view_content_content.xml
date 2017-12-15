@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    
+    <LinearLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        
+        <!--导航栏-->
+    	<RelativeLayout style="@style/navigation_bar">
+
+        	<Button
+            	android:id="@+id/back_btn"
+            	style="@style/btn"
+            	android:background="@drawable/back_btn"/>
+
+        	<LinearLayout style="@style/linearlayout_title" >
+
+        	    <TextView
+        	        android:id="@+id/name"
+        	        style="@style/title_text"
+        	        android:text="@string/titles" />
+        	    
+        	</LinearLayout>
+
+		</RelativeLayout>
+    	
+    	<LinearLayout 
+       	 	android:layout_height="match_parent"
+        	android:layout_width="match_parent"
+        	android:paddingTop="35dp"
+        	android:gravity="center_vertical"
+        	android:background="@drawable/background2_img"
+        	android:orientation="vertical">
+    		
+    		<LinearLayout
+    	    	android:layout_width="match_parent"
+    	    	android:layout_height="wrap_content"
+    	    	android:paddingLeft="29dp"
+    	    	android:paddingRight="18dp"
+    	    	android:paddingTop="35dp"
+    	    	android:paddingBottom="70dp"
+    	    	android:background="@drawable/text_frame_img">
+    	    
+    			<TextView 
+    	    		style="@style/strings"
+    	    		android:id="@+id/content_title"	
+    	    		android:text="@string/app_name"
+    	    		android:textColor="@color/bblack"
+    	    		android:textSize="20sp"/>
+    	
+    		</LinearLayout>
+    	
+			<LinearLayout 
+		    	style="@style/linearlayout_content"
+		    	android:layout_marginTop="5dp">
+		    
+				<Button
+		    		style="@style/btn"
+		    		android:id="@+id/true_btn"
+		   	 		android:background="@drawable/true_btn"
+		   	 		android:layout_marginRight="30dp"/>
+			
+				<Button
+			    	style="@style/btn"
+			    	android:id="@+id/false_btn"
+			    	android:background="@drawable/false_btn"
+			    	android:layout_marginLeft="30dp"/>
+		    
+			</LinearLayout>
+    	
+		</LinearLayout>
+		
+	</LinearLayout>
+	 
+</RelativeLayout>

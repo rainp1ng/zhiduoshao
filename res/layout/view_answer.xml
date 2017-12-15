@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    
+    <LinearLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        
+        <!--导航栏-->
+    	<RelativeLayout style="@style/navigation_bar">
+
+        	<Button
+            	android:id="@+id/exit_btn"
+            	style="@style/btn"
+            	android:background="@drawable/back_btn"/>
+        	
+        	<LinearLayout style="@style/linearlayout_title" >
+
+        		<TextView
+        	    	style="@style/title_text"
+        	    	android:id="@+id/answer"
+        	    	android:text="@string/answer" />
+
+        	</LinearLayout>
+
+    	</RelativeLayout>
+		
+    	
+    	
+    	<LinearLayout style="@style/background2"
+    		android:gravity="center_vertical">
+        	
+    		<ScrollView style="@style/icon"
+    		    android:layout_marginTop="37dp">
+    		
+    		<LinearLayout style="@style/icon"
+    		    android:orientation="vertical">
+    		
+    		<LinearLayout
+    	    	android:layout_width="match_parent"
+    	    	android:layout_height="wrap_content"
+    	    	android:paddingLeft="11dp"
+    	    	android:paddingRight="11dp"
+    	    	android:paddingTop="15dp"
+    	    	android:paddingBottom="5dp"
+    	    	android:layout_marginLeft="10dp"
+    	    	android:layout_marginRight="10dp"
+    	    	android:background="@drawable/answer_frame_img">
+    	    
+    			<TextView 
+    	    		style="@style/strings"
+    	    		android:id="@+id/content_answer"	
+    	    		android:text="@string/app_name"
+    	    		android:textColor="@color/bblack"
+    	    		android:textSize="15sp"/>
+    	
+    		</LinearLayout>
+		    
+    		<LinearLayout style="@style/linearlayout_btn"
+    		    android:orientation="horizontal"
+    		    android:gravity="center_horizontal">
+    		
+			<Button
+            	style="@style/buttons"
+            	android:id="@+id/note_btn"
+				android:layout_marginTop="19dp"
+				android:layout_marginRight="13dp"
+            	android:textColor="@color/bblack"
+            	android:textSize="20sp"
+            	android:text="@string/confirm_note"
+            	android:background="@drawable/btn_bg_img"  />
+			
+			<Button
+            	style="@style/buttons"
+            	android:id="@+id/next_btn"
+				android:layout_marginTop="19dp"
+				android:layout_marginLeft="13dp"
+            	android:textColor="@color/bblack"
+            	android:textSize="20sp"
+            	android:text="@string/next_content"
+            	android:background="@drawable/btn_bg_img"  />
+			
+			</LinearLayout>
+
+    	</LinearLayout> 
+    	
+    	</ScrollView>
+    	
+    	</LinearLayout>
+    		
+	</LinearLayout>
+	 
+</RelativeLayout>
